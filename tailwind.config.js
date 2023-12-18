@@ -50,6 +50,10 @@ module.exports = {
           '0%': { filter: 'opacity(80%)' },
           '50%': { filter: 'opacity(40%)' },
           '100%': { filter: 'opacity(80%)' },
+        },
+        fadeOut: {
+          '0%': { filter: 'opacity(1)'},
+          '100%': { filter: 'opacity(0)'},
         }
       },
       animation: {
@@ -58,7 +62,8 @@ module.exports = {
         dropdown: 'dropdown 0.2s linear',
         lateralBounce: 'lateralBounce 0.3s ease-out',
         shake: 'shake 0.3s ease-out',
-        squeleton: 'squeleton 2s ease-out infinite'
+        squeleton: 'squeleton 2s ease-out infinite',
+        fadeOut: 'squeleton 0.3s ease-out',
       }
     },
   },

@@ -1,28 +1,36 @@
-<section class="h-screen flex items-center justify-center bg-lime-800/10">
-    <div class="rounded-full h-[200px] aspect-square overflow-hidden flex items-center justify-center">
+<section id="loading-screen" class="h-screen flex items-center justify-center bg-lime-800/10 relative">
+    <div class="rounded-full h-[50px] md:h-[100px] lg:h-[150px] xl:h-[200px] aspect-square overflow-hidden flex items-center justify-center">
         <img src="../../../assets/imgs/nutrilitics-logo.png" class="h-[120%] object-cover" alt="Nutrilitics Logo">
     </div>
-    <h1 class="home-big-title text-[200px] font-extrabold font-pacifico ps-5 pe-2">Nutrilitics</h1>
+    <h1 class="home-big-title text-[50px] md:text-[100px] lg:text-[150px] xl:text-[200px] font-extrabold font-pacifico ps-5 pe-2">Nutrilitics</h1>
+    <div class="absolute bottom-20">
+        <span class="loader aspect-square h-12 border-[5px] border-lime-950 after:aspect-square after:h-12 after:border-[5px] after:border-lime-800"></span>
+    </div>
 </section>
-<header class="h-[60px] bg-lime-800/10 items-center justify-center flex lg:px-[200px] gap-3 sticky top-0 w-full">
-    <div class="rounded-full h-[80%] aspect-square overflow-hidden flex items-center justify-center">
-        <img src="../../../assets/imgs/nutrilitics-logo.png" class="h-[120%] object-cover" alt="Nutrilitics Logo">
-    </div>
-    <h1 class="text-3xl font-pacifico text-lime-950">Nutrilitics</h1>
-    <section class="ms-auto">
-        
-        <button class="text-xl font-bold px-3 py-1 bg-lime-950 border-2 border-transparent text-neutral-50 rounded-md hover:bg-lime-800/30 hover:text-lime-950 hover:border-lime-950 active:scale-95 duration-200">Iniciar sesión</button>
-    </section>
-    <section class="absolute top-0 h-[60px] flex items-center">
-        <div class="rounded-xl overflow-hidden h-max">
-            <input type="text" class="bg-neutral-50 w-64 rounded-ss-xl rounded-es-xl outline-0 border-2 border-transparent focus:border-lime-950 focus:p-2 duration-200">
-            <button class="h-full aspect-square"><i class="fa-solid fa-magnifying-glass"></i></button>
+<section id="home-wrapper" class="hidden">
+    <header class="h-[50px] md:h-[60px] bg-lime-800/10 items-center justify-center flex px-2 md:px-5 lg:px-10 xl:px-[200px] gap-3 sticky top-0 w-full">
+        <div class="rounded-full h-[70%] aspect-square overflow-hidden flex items-center justify-center">
+            <img src="../../../assets/imgs/nutrilitics-logo.png" class="h-[120%] object-cover" alt="Nutrilitics Logo">
         </div>
-    </section>
-</header>
-<main class="min-h-[calc(100vh-60px)]">
-
-</main>
-<footer class="h-[100px] bg-slate-400">
-
-</footer>
+        <h1 class="hidden md:block text-3xl font-pacifico text-lime-950">Nutrilitics</h1>
+        <section class="ms-auto">
+            
+            <button class="text-base lg:text-xl font-bold px-3 py-1 bg-lime-950 border-2 border-transparent text-neutral-50 rounded-md hover:bg-lime-800/30 hover:text-lime-950 hover:border-lime-950 active:scale-95 duration-200 flex items-center justify-center gap-3">
+                <span class="hidden md:block">Empezar</span>
+                <i class="fa-solid fa-person-walking-arrow-right"></i>
+            </button>
+        </section>
+        <section class="absolute top-0 h-full flex items-center">
+            <div class="rounded-xl overflow-hidden h-max">
+                <input type="text" class="bg-neutral-50 w-64 rounded-ss-xl rounded-es-xl outline-0 border-2 border-transparent focus:border-lime-950 focus:p-2 duration-200">
+                <button class="h-full aspect-square"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </section>
+    </header>
+    <main class="min-h-[calc(100vh-60px)]">
+    
+    </main>
+    <footer class="h-[100px] bg-slate-400">
+    
+    </footer>
+</section>
