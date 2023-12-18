@@ -14,7 +14,19 @@ module.exports = {
         "pacifico": ['Pacifico', 'cursive'],
       },
       colors: {
-        "main": "#34285a",
+        "pstLime": {
+          50: "#F4F9F2",
+          100: "#E5EDDB",
+          200: "#E0EDC8",
+          300: "#C9DCA4",
+          400: "#C0DC8B",
+          500: "#CFFA86",
+          600: "#9FBF67",
+          700: "#8AA65A",
+          800: "#62753F",
+          950: "#3F4F1D",
+          900: "#1F260E",
+        },
       },
       keyframes: {
         ballSlideInFromRight: {

@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
+import { IndexComponent } from './components/index/index.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 
 const routes: Routes = [
-  { path: "", component: HomeComponent, data: { title: "Nutrilitics" } },
+  { path: "", component: IndexComponent, children: [
+    {path: "", component: WelcomeComponent, data: {title: "Nutrilitics"}}
+  ]},
   //{ path: "login", component: LoginComponent, data: { title: "CVOrotava - Log In" } },
   //{ path: "error...", component: NotFoundComponent, data: { title: "Vaya..." } },
   { path: "**", redirectTo: "error..." }

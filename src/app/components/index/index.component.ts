@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+  selector: 'app-index',
+  templateUrl: './index.component.html',
+  styleUrls: ['./index.component.css']
 })
-export class HomeComponent {
-  constructor() {}
+export class IndexComponent {
+  constructor() { }
 
   ngOnInit() {
     setTimeout(() => {
@@ -22,7 +22,7 @@ export class HomeComponent {
     setTimeout(() => {
       loadingScreen?.classList.toggle('hidden');
       loadingScreen?.classList.toggle('opacity-0');
-    }, 300);
+    }, 200);
     homeWrapper?.classList.toggle('hidden');
   }
 }
